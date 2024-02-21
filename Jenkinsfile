@@ -6,7 +6,7 @@ pipeline {
     }
     environment {
         registry = "irphan964/docker_project"
-        registryCredential = 'irphan964'
+        registryCredential = 'docker_hub'
     }
     stages {
         stage('Building image') {
