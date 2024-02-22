@@ -1,9 +1,5 @@
 pipeline {
     agent any
-    options {
-        buildDiscarder(logRotator(numToKeepStr: '5', daysToKeepStr: '5'))
-        timestamps()
-    }
     environment {
         registry = "irphan964/docker_project"
         registryCredential = 'docker_hub'
